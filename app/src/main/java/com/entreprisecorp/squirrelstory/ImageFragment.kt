@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 
 
-class StoryFragment : Fragment() {
+class ImageFragment : Fragment() {
 
     @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +23,6 @@ class StoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_story, container, false)
+        return inflater.inflate(R.layout.fragment_image, container, false)
     }
 }

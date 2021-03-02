@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:transitionName="imageTransition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jacket" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Conversation with Ruskin Bond A Special Tree  One day, when Rakesh was six, he walked home from the Mussoorie bazaar eating cherries. They were a little sweet, a little sour; small, bright red cherries, which had come all the way from the Kashmir Valley.  Here in the Himalayan foothills where Rakesh lived, there were not many fruit trees. The soil was stony, and the dry cold winds stunted the growth of most plants. But on the more sheltered slopes there were forests of oak and deodar.  Rakesh lived with his grandfather on the outskirts of Mussoorie, just where the forest began. His father and mother lived in a small village fifty miles away, where they grew maize and rice and barley in narrow terraced fields on the lower slopes of the mountain. But there were no schools in the village, and Rakesh’s parents were keen that he should go to school. As soon as he was of school-going age, they sent him to stay with his grandfather in Mussoorie. He had a little cottage outside the town.  ‘What can I do with a seed?’"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:backgroundTint="#75FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:srcCompat="@android:drawable/ic_media_play"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

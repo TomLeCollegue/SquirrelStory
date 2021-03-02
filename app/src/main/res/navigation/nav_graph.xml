@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_homeFragment_to_storyFragment"
             app:destination="@id/storyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
     </fragment>
     <fragment
         android:id="@+id/storyFragment"
         android:name="com.entreprisecorp.squirrelstory.StoryFragment"
         android:label="fragment_story"
         tools:layout="@layout/fragment_story" />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.entreprisecorp.squirrelstory.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
 </navigation>
