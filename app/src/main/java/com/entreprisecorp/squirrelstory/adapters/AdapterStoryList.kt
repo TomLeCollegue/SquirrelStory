@@ -5,10 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.entreprisecorp.squirrelstory.R
 
-class AdapterStoryList() : RecyclerView.Adapter<AdapterStoryList.ViewHolder>() {
+class AdapterStoryList(val view : View) : RecyclerView.Adapter<AdapterStoryList.ViewHolder>() {
 
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -25,6 +27,10 @@ class AdapterStoryList() : RecyclerView.Adapter<AdapterStoryList.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+        holder.imageStory.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_storyFragment);
+        }
 
     }
 

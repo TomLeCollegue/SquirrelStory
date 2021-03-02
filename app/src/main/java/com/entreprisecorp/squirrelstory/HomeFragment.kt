@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val helper: SnapHelper = PagerSnapHelper()
 
-        recyclerViewStory.adapter = AdapterStoryList()
+        recyclerViewStory.adapter = AdapterStoryList(view)
         helper.attachToRecyclerView(recyclerViewStory)
 
     }
