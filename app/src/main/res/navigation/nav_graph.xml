@@ -21,10 +21,18 @@
         android:id="@+id/storyFragment"
         android:name="com.entreprisecorp.squirrelstory.StoryFragment"
         android:label="fragment_story"
-        tools:layout="@layout/fragment_story" />
+        tools:layout="@layout/fragment_story" >
+        <action
+            android:id="@+id/action_storyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/imageFragment"
         android:name="com.entreprisecorp.squirrelstory.ImageFragment"
         android:label="fragment_image"
-        tools:layout="@layout/fragment_image" />
+        tools:layout="@layout/fragment_image" >
+        <action
+            android:id="@+id/action_imageFragment_to_storyFragment"
+            app:destination="@id/storyFragment" />
+    </fragment>
 </navigation>

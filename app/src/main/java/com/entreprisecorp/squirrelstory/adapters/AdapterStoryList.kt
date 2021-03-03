@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityOptionsCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -41,6 +42,7 @@ class AdapterStoryList(val view : View, val homeFragment: HomeFragment) : Recycl
                 transitionName = "imageTransition"
             }
             val extras = FragmentNavigatorExtras(
+                //view.findViewById<ConstraintLayout>(R.id.TopBar) to "layoutTransition"
                 it to "imageTransition"
             )
             Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_storyFragment, null, null, extras)
